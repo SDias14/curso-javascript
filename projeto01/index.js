@@ -48,9 +48,92 @@ console.log(olamundo);
 
       //operadores logicos.  
        
-       let a=10;
+     /*  let a=10;
        const b="10";
 
-       console.log(a==b && typeof b == "string");
+       console.log(a==b && typeof b == "string"); 
+       
+       este é um caso de uso do operador e. nesse caso ele vai retornar verdadeiro se a primeira condição for verdadeira e tambem a segunda 
+       
+       
+       */
+
+  /*     let a=10;
+       const b="10";
+
+       console.log(a==b || typeof a == "string"); */
+
+       //controle de trechos de codigos 
+
+  /*     let cor = "yellow";
+
+       if(cor === "verde") {
+           
+            console.log("siga");
+
+           
+       
+        } 
+        
+        else if (cor === "yellow") {
+
+            console.log("atenção");
+        
+        }
+
+        //else if será um if a mais. 
+        
+        
+        else {
+           
+            console.log("pare");
+       }
+
+       */
+
+ //esse é um tipo de controle de codigo quando queremos rodar apenas um trecho do codigo. 
+
+ //rodar parte do codigo com o switch
+
+
+   /*      let cor = "amarelo";
+
+         switch (cor){
+
+            case "verde":
+                console.log("siga");
+            break;
+
+            case "amarelo":
+                console.log("atenção");
+            break;
+
+            case "vermelho":
+                console.log("pare");
+            break;
+
+            default: 
+                console.log("não sei");
+         }
+
+         //esse é um modo eficiente porque ele nao vai comparar com todas as outras informações. ele vai rodar o codigo baseado somente na questao da cor da variavel. 
+
+         */
+
+         //uso do for para repetições : 
+
+         let n = 7;
+
+         for (let i=0; i <= 10; i++){
+
+            console.log (`${i} X ${n} = ${i*n}`); //esse é um exemplo de template string onde voce coloca diversos objetos e variaveis na mesma linha
+
+         }
+
+
+
+
+
+
 
        
