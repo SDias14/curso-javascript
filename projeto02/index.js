@@ -91,3 +91,94 @@ document.addEventListener ('click', event => {
 //===================================
 
 //quando trabalhamos com datas , estamos na verdade trabalhando com objetos. Precisamos trabalhar com classes. 
+
+//let agora = new Date();
+
+//console.log(agora);
+
+// criamos uma variavel que recebe uma instancia da classe Date.
+
+/*
+let agora = new Date();
+
+console.log(agora.getDate()); //retorna o dia do mes.
+console.log(agora.getMonth()); //retorna o mes do ano, começando em 0 .
+console.log(agora.getUTCFullYear()); //retorna o ano. */
+
+/*
+let agora = new Date();
+
+console.log(agora.toLocaleDateString("pt-BR")); //retorna o dia do mes.
+
+*/
+
+
+//arrays: é uma estrutura de dados que permite armazenar varios valores em uma unica variavel.
+
+//let carros = ["palio 98" , "uno" , "fusca", 10, true, new Date(), function(){}];
+
+//console.log(carros); //retorna todos os valores do array.
+
+//console.log(carros.length); //retorna o tamanho do array.
+
+//console.log(carros [5].getFullYear()); //retorna o valor do indice 5.
+
+//laços de repetição: é um tipo de estrutura de controle que permite que um bloco de codigo seja executado determinado numero de vezes.
+
+/* let carros = ["palio 98" , "uno" , "fusca", 10, true, new Date(), function(){}];
+
+carros.forEach(function(value, index){
+   
+    console.log(index, value);
+}); */
+
+/*
+let companhia = ["tam", "latam", "123 milhas", "quatar arlines"
+];
+
+companhia.forEach(function(value, index){
+       
+    console.log(index, value);
+});
+
+*/
+//===================================
+
+
+//orientação a objetos: jeito de se programar que voce reutiliza codigo. dentro de uma classe nos temos elementos e funcoes. a variavel dentro da classe se chama atributo e a funcao dentro da classe se chama metodo. ganham mais recursos. O atributo é como uma variavel, a diferença é que podemos chamar da onde quisermos. atributos = armazenamento. metodos = ações que realizamos. Instancia : é quando o objeto representa uma classe. temos que chama-la com o new. 
+
+/*
+let celular = function (){
+    
+    this.cor = "prata";
+
+    this.ligar = function(){
+        console.log("Primeira Ligação");
+        return "ligando...";
+    }
+}
+
+let objeto = new celular();
+
+console.log(objeto.ligar());
+*/
+
+//criação do mesmo codigo de maneira mais atual : 
+
+class celular {
+    constructor(){
+        this.cor = "prata";
+    }
+    ligar(){
+        console.log("Primeira Ligação");
+        return "ligando...";
+    }
+}
+
+let objeto = new celular;
+
+console.log(objeto.ligar());
+
+
+
+
